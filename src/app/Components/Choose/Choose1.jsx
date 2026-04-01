@@ -1,37 +1,72 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const Choose1 = ({subtitle,title,content,FeatureList,FeatureList2,btnname,btnurl}) => {
-    return (
-        
-        <section className="advantage-section fix">
-            <div className="advantage-container-wrapper style1">
-                <div className="container">
-                    <div className="advantage-wrapper style1 section-padding">
-                        <div className="container">
-                            <div className="row gy-5 d-flex align-items-center">
-                                <div className="col-xl-6 order-2 order-xl-1">
-                                    <div className="advantage-content">
-                                        <div className="section-title wow fadeInUp" data-wow-delay=".2s">
-                                            <div className="subtitle">
-                                                {subtitle} <Image src="/assets/images/icon/fireIcon.svg" alt="img" width={16} height={17}   />
-                                            </div>
-                                            <h2 className="title">{title}</h2>
-                                            <p className="section-desc">{content}</p>
-                                        </div>
-                                        <div className="checklist-wrapper style1 wow fadeInUp" data-wow-delay=".4s">
-                                            <ul className="checklist style1">
-                                            {FeatureList?.map((item, index) => (
-                                                <li key={index}><Image src="/assets/images/icon/checkmarkIcon.svg" alt="img" width={30} height={30}   /> {item}</li>
-                                            ))}
-                                            </ul>
-                                            <ul className="checklist style1">
-                                            {FeatureList2?.map((item, index) => (
-                                                <li key={index}><Image src="/assets/images/icon/checkmarkIcon.svg" alt="img" width={30} height={30}   />{item} </li>
-                                            ))}
-                                            </ul>
-                                        </div>
-                                        <Link className="theme-btn wow fadeInUp" data-wow-delay=".6s" href={btnurl}> {btnname}
+const Choose1 = ({
+  subtitle,
+  title,
+  content,
+  FeatureList,
+  FeatureList2,
+  btnname,
+  btnurl,
+}) => {
+  return (
+    <section className="advantage-section fix">
+      <div className="advantage-container-wrapper style1">
+        <div className="container">
+          <div className="advantage-wrapper style1 section-padding">
+            <div className="container">
+              <div className="row gy-5 d-flex align-items-center">
+                <div className="col-xl-6 order-2 order-xl-1">
+                  <div className="advantage-content">
+                    <div
+                      className="section-title wow fadeInUp"
+                      data-wow-delay=".2s"
+                    >
+                      <div className="subtitle">
+                        {subtitle}{" "}
+                        <Image
+                          src="/assets/images/icon/fireIcon.svg"
+                          alt="img"
+                          width={16}
+                          height={17}
+                        />
+                      </div>
+                      <h2 className="title">{title}</h2>
+                      <p className="section-desc">{content}</p>
+                    </div>
+                    <div
+                      className="checklist-wrapper style1 wow fadeInUp"
+                      data-wow-delay=".4s"
+                    >
+                      <ul className="checklist style1">
+                        {FeatureList?.map((item, index) => (
+                          <li key={index}>
+                            <Image
+                              src="/assets/images/icon/checkmarkIcon.svg"
+                              alt="img"
+                              width={30}
+                              height={30}
+                            />{" "}
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                      <ul className="checklist style1">
+                        {FeatureList2?.map((item, index) => (
+                          <li key={index}>
+                            <Image
+                              src="/assets/images/icon/checkmarkIcon.svg"
+                              alt="img"
+                              width={30}
+                              height={30}
+                            />
+                            {item}{" "}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    {/* <Link className="theme-btn wow fadeInUp" data-wow-delay=".6s" href={btnurl}> {btnname}
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 viewBox="0 0 16 16" fill="none">
                                                 <g clipPath="url(#clip0_43_54)">
@@ -45,26 +80,33 @@ const Choose1 = ({subtitle,title,content,FeatureList,FeatureList2,btnname,btnurl
                                                     </clipPath>
                                                 </defs>
                                             </svg>
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="col-xl-6 order-1 order-xl-2">
-                                    <div className="advantage-thumb">
-                                        <div className="thumb1 img-custom-anim-top wow fadeInDown" data-wow-delay=".8s"
-                                            data-tilt data-tilt-max="10">
-                                                <Image src="/assets/images/advantage/advantageThumb1_1.png" alt="Web Applications" width={600} height={591} />
-                                               </div>
-                                        
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                        </Link> */}
+                  </div>
                 </div>
+                <div className="col-xl-6 order-1 order-xl-2">
+                  <div className="advantage-thumb">
+                    <div
+                      className="thumb1 img-custom-anim-top wow fadeInDown"
+                      data-wow-delay=".8s"
+                      data-tilt
+                      data-tilt-max="10"
+                    >
+                      <Image
+                        src="/assets/images/advantage/advantageThumb1_1.png"
+                        alt="Web Applications"
+                        width={600}
+                        height={591}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-    );
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Choose1;

@@ -166,6 +166,9 @@
     "readyText": "It is well known that the reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
     "copyright": "Copyright © ENS All rights reserved"
   },
+  "BlogDetailsUI": {
+    "shareLabel": "Share:"
+  },
   "Blog1": {
     "subtitle": "Blog",
     "title": "Important Articles",
@@ -297,7 +300,7 @@
         "desc": "The collaboration with your team was smooth and professional, from developing the website to creating the internal networks"
       },
       {
-        "img": "/assets/images/testimonial/test3.png",
+        "img": "/assets/images/testimonial/test2.png",
         "title": "Laborex Pharma",
         "subTitle": "Pharmaceutical Company",
         "desc": "Your company provided us with an excellent experience in setting up network systems within our company"

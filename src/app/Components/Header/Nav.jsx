@@ -144,7 +144,7 @@ export default function Nav({ setMobileToggle }) {
       </li>
       <li className="menu-item-has-children">
         <Link
-          href={`/${locale}/development`}
+          href={`/${locale}/development/web-development`}
           onClick={() => setMobileToggle(false)}
         >
           {locale === "ar" ? "البرمجة والتطوير" : "Development "}
@@ -180,7 +180,7 @@ export default function Nav({ setMobileToggle }) {
       </li>
       <li className="menu-item-has-children">
         <Link
-          href={`/${locale}/our-projects/news-app`}
+          href={`/${locale}/our-projects/news-project`}
           onClick={() => setMobileToggle(false)}
         >
           {locale === "ar" ? "الاصدارات البرمجيه" : "Our Projects"}

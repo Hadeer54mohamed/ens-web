@@ -167,6 +167,9 @@
     "copyright": "حقوق النشر © ENS جميع الحقوق محفوظة"
   },
 
+  "BlogDetailsUI": {
+    "shareLabel": "مشاركة:"
+  },
   "Blog1": {
     "subtitle": "المدونة",
     "title": "مقالات هامة",
@@ -280,19 +283,19 @@
     "title": "ماذا يقول عملاؤنا؟",
     "items": [
       {
-        "img": "/assets/images/testimonial/test1.png",
+        "img": "/assets/images/team/user1.jpg",
         "title": "نور الدين",
         "subTitle": "سلسله متاجر بالتجزئة",
         "desc": "خدمة تأسيس الشبكات كانت ممتازة، كل الأجهزة متصلة بكفاءة، والأمان المعلوماتي أصبح في أعلى مستوى"
       },
       {
-        "img": "/assets/images/testimonial/test2.png",
+        "img": "/assets/images/team/user3.jpg",
         "title": "الثورة",
         "subTitle": "سلسله مطاعم",
         "desc": "التعاون مع فريقكم كان سلسًا واحترافيًا، من تطوير الموقع الإلكتروني إلى إنشاء الشبكات الداخلية"
       },
       {
-        "img": "/assets/images/testimonial/test3.png",
+        "img": "/assets/images/team/user4.jpg",
         "title": "Laborex Pharma",
         "subTitle": "شركة أدوية",
         "desc": "شركتكم قدمت لنا تجربة رائعة في تأسيس أنظمة الشبكات داخل شركتنا"

@@ -99,7 +99,7 @@ const About1 = ({
                       </li>
                     ))}
                   </ul>
-                  <Link
+                  {/* <Link
                     className="theme-btn wow fadeInUp"
                     data-wow-delay=".2s"
                     href={btnurl}
@@ -124,7 +124,7 @@ const About1 = ({
                         </clipPath>
                       </defs>
                     </svg>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>

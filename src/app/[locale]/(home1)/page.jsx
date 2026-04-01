@@ -64,10 +64,10 @@ const page = () => {
         btnname={t("choose.btn")}
         btnurl={`/${locale}/about`}
       ></Choose1>
-      <Feature1></Feature1>
       <Counter1></Counter1>
-      <Faq1></Faq1>
+      <Feature1></Feature1>
       <Testimonial></Testimonial>
+      <Faq1></Faq1>
 
       <Cta1
         subtitle={t("cta.subtitle")}

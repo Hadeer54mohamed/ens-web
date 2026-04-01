@@ -76,23 +76,7 @@ const Feature12 = () => {
                     className="main-thumb store-icon-wrapper"
                     data-wow-delay=".6s"
                   >
-                    <Image
-                      src="/assets/images/icon/menu-store.svg"
-                      alt="Menu Store Icon"
-                      width={450}
-                      height={400}
-                      className="store-icon-animated"
-                      unoptimized
-                    />
-                  </div>
-                  <div className="shape">
-                    <Image
-                      src="/assets/images/shape/wcuThumbShape1_1.svg"
-                      alt="img"
-                      width={450}
-                      height={450}
-                      unoptimized
-                    />
+                    <Image src="/qr.svg" width={450} height={450} alt="qr" />
                   </div>
                 </div>
               </div>

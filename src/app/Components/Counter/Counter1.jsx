@@ -25,9 +25,8 @@ const Counter1 = () => {
             className="counter-wrapper style1 section-padding"
             data-background="/assets/images/shape/counterShape1_1.png"
           >
-            <div className="shape"></div>
             <div className="container">
-              <div className="row gy-5">
+              <div className="row g-4 g-lg-5 justify-content-center align-items-start">
                 {counters.map((item, index) => (
                   <div
                     key={index}
@@ -36,9 +35,8 @@ const Counter1 = () => {
                     <div
                       className="counter-box style1 wow fadeInUp"
                       data-wow-delay={`${0.2 * (index + 1)}s`}
-                      style={{ animationDelay: `${index * 0.3}s` }}
                     >
-                      <div className="counter">
+                      <div className="counter" dir="ltr">
                         <span className="counter-number">{item.number}</span>
                         <span className="plus">{item.symbol}</span>
                       </div>
