@@ -53,6 +53,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function LocaleLayout({ children, params }) {
+  
   const resolvedParams = await params;
   const { locale } = resolvedParams;
   
