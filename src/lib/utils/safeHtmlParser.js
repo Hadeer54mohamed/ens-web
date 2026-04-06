@@ -1,68 +1,47 @@
-/**
- * Safe HTML Parser Utility
- * Uses DOMPurify to sanitize HTML before parsing to prevent XSS attacks
- */
+import parse, { domToReact } from 'html-react-parser';
+import { Fragment, createElement } from 'react';
 
-import DOMPurify from 'isomorphic-dompurify';
-import parse from 'html-react-parser';
+const ALLOWED_TAGS = new Set([
+  'b', 'i', 'em', 'strong', 'a', 'p', 'br', 'span', 'div',
+  'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol', 'li',
+  'blockquote', 'code', 'pre', 'mark', 'small', 'sub', 'sup',
+]);
 
-/**
- * Sanitize and parse HTML content safely
- * @param {string} html - HTML string to sanitize and parse
- * @param {object} options - DOMPurify options (optional)
- * @returns {React.ReactElement|string} - Parsed React element or sanitized string
- */
-export function safeParse(html, options = {}) {
-  if (!html || typeof html !== 'string') {
-    return html || '';
+const ALLOWED_ATTRS = new Set(['href', 'title', 'class', 'id', 'style']);
+
+const SAFE_URL = /^(?:(?:https?|mailto|tel):|[^a-z]|[a-z+.\-]+(?:[^a-z+.\-:]|$))/i;
+
+function replaceNode(domNode) {
+  if (domNode.type === 'tag') {
+    if (!ALLOWED_TAGS.has(domNode.name)) {
+      if (domNode.children && domNode.children.length > 0) {
+        return createElement(Fragment, null, domToReact(domNode.children, { replace: replaceNode }));
+      }
+      return null;
+    }
+    if (domNode.attribs) {
+      Object.keys(domNode.attribs).forEach((attr) => {
+        if (!ALLOWED_ATTRS.has(attr)) {
+          delete domNode.attribs[attr];
+        } else if (attr === 'href' && !SAFE_URL.test(domNode.attribs[attr])) {
+          delete domNode.attribs[attr];
+        }
+      });
+    }
   }
-
-  // Default DOMPurify configuration - only allow safe tags and attributes
-  const defaultOptions = {
-    ALLOWED_TAGS: [
-      'b', 'i', 'em', 'strong', 'a', 'p', 'br', 'span', 'div',
-      'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol', 'li',
-      'blockquote', 'code', 'pre', 'mark', 'small', 'sub', 'sup'
-    ],
-    ALLOWED_ATTR: ['href', 'title', 'class', 'id', 'style'],
-    ALLOW_DATA_ATTR: false,
-    ALLOWED_URI_REGEXP: /^(?:(?:(?:f|ht)tps?|mailto|tel|callto|sms|cid|xmpp|data):|[^a-z]|[a-z+.\-]+(?:[^a-z+.\-:]|$))/i,
-  };
-
-  // Merge user options with defaults
-  const sanitizeOptions = { ...defaultOptions, ...options };
-
-  // Sanitize HTML
-  const cleanHtml = DOMPurify.sanitize(html, sanitizeOptions);
-
-  // Parse sanitized HTML
-  return parse(cleanHtml);
 }
 
 /**
- * Sanitize HTML without parsing (returns string)
- * @param {string} html - HTML string to sanitize
- * @param {object} options - DOMPurify options (optional)
- * @returns {string} - Sanitized HTML string
+ * Sanitize and parse HTML using an allowlist approach (no jsdom needed).
  */
-export function sanitizeHtml(html, options = {}) {
-  if (!html || typeof html !== 'string') {
-    return html || '';
-  }
+export function safeParse(html) {
+  if (!html || typeof html !== 'string') return html || '';
+  return parse(html, { replace: replaceNode });
+}
 
-  const defaultOptions = {
-    ALLOWED_TAGS: [
-      'b', 'i', 'em', 'strong', 'a', 'p', 'br', 'span', 'div',
-      'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol', 'li',
-      'blockquote', 'code', 'pre', 'mark', 'small', 'sub', 'sup'
-    ],
-    ALLOWED_ATTR: ['href', 'title', 'class', 'id', 'style'],
-    ALLOW_DATA_ATTR: false,
-  };
-
-  const sanitizeOptions = { ...defaultOptions, ...options };
-
-  return DOMPurify.sanitize(html, sanitizeOptions);
+export function sanitizeHtml(html) {
+  if (!html || typeof html !== 'string') return html || '';
+  return parse(html, { replace: replaceNode });
 }
 
 export default safeParse;
