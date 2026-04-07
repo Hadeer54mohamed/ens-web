@@ -7277,7 +7277,7 @@ input.main-search-input::placeholder {
 }
 
 .brandSliderOne {
-  padding: 30px 0 140px;
+  padding: 30px 0 50px;
   border-bottom: 1px solid var(--border);
 }
 
@@ -7404,6 +7404,8 @@ input.main-search-input::placeholder {
   justify-content: center;
   gap: 4px;
   margin: 0;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .brand-client-card .brand-card-check {
@@ -7416,7 +7418,7 @@ input.main-search-input::placeholder {
 
 .brand-client-card .brand-card-paragraph {
   margin: 0;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 500;
   line-height: 1.55;
   color: var(--title);
@@ -7489,12 +7491,12 @@ input.main-search-input::placeholder {
 }
 
 .brandSliderTwo {
-  padding: 30px 0 0px;
   border-bottom: 0px;
+  padding-bottom: 50px;
 }
 .brandSliderTwo .brand-logo {
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7502,17 +7504,21 @@ input.main-search-input::placeholder {
     transform 0.3s ease,
     filter 0.3s ease;
 }
+.brandSliderTwo .brand-image-wrapper {
+  position: relative;
+  width: 160px;
+  height: 70px;
+  margin: 0 auto;
+}
 
 .brandSliderTwo .brand-logo:hover {
-  transform: scale(1.1) translateY(-5px);
+  transform: scale(1.08) translateY(-3px);
   filter: brightness(1.1);
 }
 
 .brandSliderTwo .brand-image {
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  object-fit: contain;
-  max-width: 100%;
-  height: auto;
+  object-fit: contain !important;
 }
 
 .brandSliderTwo .brand-logo:hover .brand-image {
@@ -7528,7 +7534,7 @@ input.main-search-input::placeholder {
   .brandSliderOne .brand-logo,
   .brandSliderTwo .brand-logo {
     width: 100%;
-    padding: 30px 15px;
+    padding: 20px 10px;
     margin: 0 auto;
   }
 
@@ -7538,6 +7544,11 @@ input.main-search-input::placeholder {
     max-width: 100% !important;
     height: auto;
     object-fit: contain;
+  }
+
+  .brandSliderTwo .brand-image-wrapper {
+    width: 140px;
+    height: 55px;
   }
 
   .brandSliderOne .swiper-slide,
@@ -7562,6 +7573,40 @@ input.main-search-input::placeholder {
 }
 .brand-slider-wrapper.style2 .single-section-title {
   font-size: 24px;
+}
+
+.brand-loading-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 0;
+}
+.brand-loading-item {
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, var(--border) 25%, transparent 50%, var(--border) 75%);
+  background-size: 200% 100%;
+  animation: brandShimmer 1.5s infinite;
+}
+@keyframes brandShimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+@media (max-width: 767px) {
+  .brand-loading-grid {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .brand-loading-item {
+    width: 120px;
+    height: 40px;
+  }
+}
+
+.brand-slide-item {
+  outline: none;
 }
 
 /* 18.About */
@@ -7728,6 +7773,7 @@ input.main-search-input::placeholder {
 
 .about-section-3 {
   position: relative;
+  padding-top: 50px;
 }
 .about-section-3 .about-shape {
   position: absolute;

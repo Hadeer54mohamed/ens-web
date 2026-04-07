@@ -876,5 +876,11 @@
     "messageLabel": "Write your message*",
     "messagePlaceholder": "Write Message",
     "sendButton": "Send Message"
+  },
+  "Brand1": {
+    "title": "Millions of clients trust us.",
+    "loading": "Loading brands...",
+    "noBrands": "No brands available at the moment.",
+    "error": "Error"
   }
 }

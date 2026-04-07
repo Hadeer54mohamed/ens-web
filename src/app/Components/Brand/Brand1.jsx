@@ -5,6 +5,7 @@ import { useLocale } from "next-intl";
 import brand1Data from "../../Data/brand1Data.json";
 
 const CHECKMARK_SRC = "/assets/images/icon/checkmarkIcon.svg";
+import Link from "next/link";
 
 /** بيانات السيكشن والكروت من `src/app/Data/brand1Data.json` */
 const {
@@ -177,6 +178,13 @@ const Brand1 = () => {
                                 </div>
                               ))}
                             </div>
+                            {brand.url && (
+                              <div className="brand-card-link text-center">
+                                <Link href={brand.url} target="_blank" rel="noopener noreferrer">
+                                  <i className="bi bi-arrow-up-right"></i> {locale === "ar" ? "زيارة الموقع" : "Visit Website"}
+                                </Link>
+                              </div>
+                            )}
                           </div>
                         </div>
                       </div>

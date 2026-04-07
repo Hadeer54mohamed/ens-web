@@ -14,6 +14,7 @@ import Feature2 from "../../Components/Feature/Feature2";
 import Cta1 from "../../Components/Cta/Cta1";
 import Blog1 from "../../Components/Blog/Blog1";
 import { useLocale, useTranslations } from "next-intl";
+import BrandSwaper from "../../Components/Brand/Brand-swaper.jsx";
 
 const page = () => {
   const t = useTranslations("HomePage");
@@ -28,7 +29,7 @@ const page = () => {
         title={t("hero.title")}
         content={t("hero.content")}
         btnname={t("hero.btn1")}
-        btnurl={`#`}
+        btnurl={`/${locale}/contact`}
         btntwo={t("hero.btn2")}
         btn2url={`#`}
         cusimg="/assets/images/intro/introProfileThumb1_1.png"
@@ -39,6 +40,7 @@ const page = () => {
         img="/assets/images/intro/introThumb1_1.png"
       ></HeroBanner1>
       <Brand1></Brand1>
+      <BrandSwaper></BrandSwaper>
       <About1
         img1="/assets/images/about/1.png"
         img2="/assets/images/about/aboutThumb1_2.png"

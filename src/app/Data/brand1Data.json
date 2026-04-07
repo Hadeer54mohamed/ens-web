@@ -22,139 +22,262 @@
   "brands": [
     {
       "id": 1,
-      "img": "/assets/images/logo/brandLogo1_1.png",
-      "name": { "ar": "شركة 1", "en": "Company 1" },
-      "description": {
-        "ar": ["وصف مختصر عن الشركة ومجال عملها."],
-        "en": [
-          "A short description of the company and its field of work.",
-          "You can add a second paragraph or more in the same array format."
-        ]
-      },
-      "points": {
-        "ar": [
-          "فقرة نصية.",
-          "فقرة نصية.",
-          "فقرة نصية.",
-          "فقرة نصية.",
-          "فقرة نصية.",
-          "فقرة نصية.",
-          "فقرة نصية.",
-          "فقرة نصية.",
-          "فقرة نصية."
-        ],
-        "en": [
-          "A paragraph of text.",
-          "A paragraph of text.",
-          "A paragraph of text.",
-          "A paragraph of text.",
-          "A paragraph of text.",
-          "A paragraph of text.",
-          "A paragraph of text."
-        ]
-      }
-    },
+      "img": "/assets/images/logo/elsawra.png",
+     "name": { "ar": "مطعم الثورة", "en": "Elsawra Restaurant" },
+  "description": {
+    "ar": [
+      "منصة رقمية متكاملة لسلسلة مطاعم الثورة، تدعم تعدد الفروع وتقدم تجربة طلب طعام أونلاين مع حلول دفع إلكتروني آمنة."
+    ],
+    "en": [
+      "A complete digital platform for Elsawra Restaurant chain, supporting multiple branches and providing online food ordering with secure payment solutions."
+    ]
+  },
+ "points": {
+  "ar": [
+    "نظام متكامل لإدارة وتتبع الطلبات حتى التوصيل.",
+    "دفع إلكتروني آمن يدعم جميع البطاقات.",
+    "إدارة الفروع وتوجيه الطلبات بدقة.",
+    "تطوير Backend و API لإدارة العمليات.",
+    "لوحة تحكم لإدارة المنيو والفروع.",
+    "تصميم موبايل سريع وسهل الاستخدام."
+  ],
+  "en": [
+    "Complete system for managing and tracking orders.",
+    "Secure online payment for all cards.",
+    "Branch management with accurate order routing.",
+    "Backend and API development.",
+    "Dashboard for menus and branches.",
+    "Fast mobile-friendly design."
+  ]
+},
+  "url": "https://elsawra.net"
+},
     {
       "id": 2,
-      "img": "/assets/images/logo/brandLogo1_2.png",
-      "name": { "ar": "شركة 2", "en": "Company 2" },
-      "description": {
-        "ar": ["فقرة واحدة كافية إن أردت؛ أو عدة فقرات."],
-        "en": [
-          "One paragraph is enough, or use an array for several paragraphs."
-        ]
-      },
+     "img": "/assets/images/logo/lapip.png",
+        "name": { "ar": "لابيب ستور", "en": "Lapip Store" },
+        "description": {
+          "ar": [
+            "منصة تجارة إلكترونية متخصصة في عالم الفيب (Vape) ومستلزماته، توفر تجربة تسوق عصرية لعرض أحدث الأجهزة والنكهات."
+          ],
+          "en": [
+            "A specialized E-commerce platform for the Vape industry and accessories, providing a modern shopping experience for devices and flavors."
+          ]
+        },
       "points": {
-        "ar": ["فقرة نصية.", "فقرة نصية.", "فقرة نصية.", "فقرة نصية."],
-        "en": [
-          "A paragraph of text.",
-          "A paragraph of text.",
-          "A paragraph of text.",
-          "A paragraph of text."
-        ]
-      }
-    },
+  "ar": [
+    "متجر إلكتروني لبيع أجهزة الفيب والملحقات.",
+    "تطوير Backend و API لإدارة البيانات.",
+    "لوحة تحكم لإدارة الطلبات والمخزون.",
+    "تصنيف المنتجات مثل الأجهزة والنكهات.",
+    "تجربة تصفح سهلة وسريعة.",
+    "تصميم متجاوب لكل الأجهزة."
+  ],
+  "en": [
+    "E-commerce store for vape products.",
+    "Backend and API for data management.",
+    "Dashboard for orders and inventory.",
+    "Product categories for devices and flavors.",
+    "Fast and simple browsing experience.",
+    "Responsive design for all devices."
+  ]
+},
+        "url": "https://lapip.net"
+      },
     {
       "id": 3,
-      "img": "/assets/images/logo/brandlogo13.png",
-      "name": { "ar": "شركة 3", "en": "Company 3" },
-      "description": {
-        "ar": ["وصف مختصر عن الشركة ومجال عملها."],
-        "en": ["A short description of the company and its field of work."]
-      },
-      "points": {
-        "ar": [
-          "فقرة نصية.",
-          "فقرة نصية.",
-          "فقرة نصية.",
-          "فقرة نصية.",
-          "فقرة نصية.",
-          "فقرة نصية.",
-          "فقرة نصية.",
-          "فقرة نصية.",
-          "فقرة نصية."
-        ],
-        "en": [
-          "A paragraph of text.",
-          "A paragraph of text.",
-          "A paragraph of text.",
-          "A paragraph of text."
-        ]
-      }
-    },
+      "img": "/assets/images/logo/uzersaif.png",
+  "name": { "ar": "يوزر سيف للرحلات", "en": "UZERSaif Tours" },
+  "description": {
+    "ar": [
+      "موقع تعريفي متخصص في عرض وتنظيم الرحلات السياحية، يتيح للمستخدمين استعراض الوجهات وحجز الرحلات بسهولة."
+    ],
+    "en": [
+      "A specialized landing page for showcasing and organizing tourist trips, allowing users to browse destinations and book tours easily."
+    ]
+  },
+  "points": {
+  "ar": [
+    "تصميم UI جذاب يبرز الوجهات السياحية.",
+    "نظام حجز ذكي باستخدام النماذج.",
+    "ربط البيانات مع Google Sheets للإدارة.",
+    "موقع Static سريع لتحسين الأداء.",
+    "تصميم متجاوب للحجز من جميع الأجهزة.",
+    "تحسين SEO للظهور في نتائج البحث."
+  ],
+  "en": [
+    "Attractive UI highlighting travel destinations.",
+    "Smart booking system using forms.",
+    "Google Sheets integration for management.",
+    "High-speed static website.",
+    "Responsive design for all devices.",
+    "SEO optimization for better visibility."
+  ]
+},
+  "url": "https://uzersaif.com/"
+},
     {
       "id": 4,
-      "img": "/assets/images/logo/brandLogo1_4.png",
-      "name": { "ar": "شركة 4", "en": "Company 4" },
-      "description": {
-        "ar": ["وصف مختصر عن الشركة ومجال عملها."],
-        "en": ["A short description of the company and its field of work."]
+      "img": "/assets/images/logo/noureldeen.png",
+        "name": { "ar": "نور الدين", "en": "Nour Eldeen" },
+        "description": {
+          "ar": [
+            "موقع تعريفي متطور لسلسلة متاجر نور الدين الرائدة في تجارة التجزئة والجملة، مصمم لعرض العلامة التجارية بأعلى جودة."
+          ],
+          "en": [
+            "A sophisticated landing page for Nour Eldeen, a leading retail and wholesale chain, designed to showcase the brand's identity with premium quality."
+          ]
+        },
+        "points": {
+  "ar": [
+    "تصميم UI عصري يعكس هوية البراند.",
+    "موقع سريع باستخدام تقنيات Static.",
+    "عرض احترافي للمنتجات والفروع.",
+    "تصميم متجاوب لجميع الشاشات.",
+    "تحسين SEO للوصول للعملاء.",
+    "تجربة تصفح سلسة وسهلة."
+  ],
+  "en": [
+    "Modern UI reflecting brand identity.",
+    "High-performance static website.",
+    "Professional product and branch display.",
+    "Fully responsive across all screens.",
+    "SEO optimization for reach.",
+    "Smooth and seamless browsing experience."
+  ]
+},
+        "url": "https://noureldeen.co"
       },
-      "points": {
-        "ar": ["فقرة نصية.", "فقرة نصية.", "فقرة نصية.", "فقرة نصية."],
-        "en": [
-          "A paragraph of text.",
-          "A paragraph of text.",
-          "A paragraph of text.",
-          "A paragraph of text."
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "img": "/assets/images/logo/brandLogo1_5.png",
-      "name": { "ar": "شركة 5", "en": "Company 5" },
-      "description": {
-        "ar": ["وصف مختصر عن الشركة ومجال عملها."],
-        "en": ["A short description of the company and its field of work."]
-      },
-      "points": {
-        "ar": ["فقرة نصية.", "فقرة نصية.", "فقرة نصية.", "فقرة نصية."],
-        "en": [
-          "A paragraph of text.",
-          "A paragraph of text.",
-          "A paragraph of text.",
-          "A paragraph of text."
-        ]
-      }
-    },
+   
     {
       "id": 6,
       "img": "/assets/images/logo/brandlogo13.png",
-      "name": { "ar": "شركة 6", "en": "Company 6" },
+      "name": { "ar": "لابوريكس فارما", "en": "Laborex Pharma" },
       "description": {
-        "ar": ["وصف مختصر عن الشركة ومجال عملها."],
-        "en": ["A short description of the company and its field of work."]
-      },
-      "points": {
-        "ar": ["فقرة نصية.", "فقرة نصية.", "فقرة نصية.", "فقرة نصية."],
+        "ar": [
+          "موقع لشركة لابوريكس الرائدة في قطاع الأدوية والمستحضرات الطبية، تهدف لتقديم حلول صحية موثوقة."
+        ],
         "en": [
-          "A paragraph of text.",
-          "A paragraph of text.",
-          "A paragraph of text.",
-          "A paragraph of text."
+          "A website for Laborex, a leader in the pharmaceutical and medical products sector, aiming to provide reliable health solutions."
         ]
-      }
-    }
+      },
+     "points": {
+  "ar": [
+    "تطوير موقع احترافي للشركة.",
+    "Dashboard لإدارة البيانات الطبية.",
+    "نظام عرض وتصنيف المنتجات.",
+    "تأمين وتشفير البيانات.",
+    "تصميم متجاوب لسهولة التصفح.",
+    "تحسين الأداء وسرعة الموقع."
+  ],
+  "en": [
+    "Professional corporate website development.",
+    "Dashboard for managing medical data.",
+    "Product display and categorization system.",
+    "Secure data encryption.",
+    "Responsive design for usability.",
+    "Performance and speed optimization."
+  ]
+},
+      "url": "https://laborex-pharma.co"
+    },
+    {
+      "id": 7,
+      "img": "/assets/images/logo/ensus.png",
+      "name": { "ar": "المصرية الاسترالية للاسمدة", "en": "Egyptian Australian Fertilizers" },
+      "description": {
+        "ar": [
+          "موقع لشركة متخصصة في ابتكار وتصنيع الأسمدة والمخصبات العضوية عالمياً لخدمة القطاع الزراعي."
+        ],
+        "en": [
+          "A website for a global company specialized in innovating and manufacturing organic fertilizers to serve the agricultural sector."
+        ]
+      },
+    "points": {
+  "ar": [
+    "تصميم واجهة وتجربة مستخدم حديثة.",
+    "Dashboard إدارية متقدمة.",
+    "دعم كامل لتعدد اللغات.",
+    "نظام ديناميكي لإدارة المحتوى.",
+    "تصميم متجاوب لجميع الأجهزة.",
+    "تحسين SEO وسرعة الأداء."
+  ],
+  "en": [
+    "Modern UI/UX development.",
+    "Advanced admin dashboard.",
+    "Full multi-language support.",
+    "Dynamic content management system.",
+    "Fully responsive design.",
+    "SEO and performance optimization."
+  ]
+},
+      "url": "https://egyaus.com/"
+    },
+    {
+      "id": 8,
+      "img": "/assets/images/logo/morshd.png",
+  "name": { "ar": "Morsh-D ستور", "en": "Morsh-D Store" },
+  "description": {
+    "ar": [
+      "متجر إلكتروني عصري يعتمد على نظام الطلب المباشر عبر الواتساب، مصمم لعرض المنتجات وتسهيل عملية الشراء الفوري."
+    ],
+    "en": [
+      "A modern e-commerce store utilizing a direct WhatsApp ordering system, designed to showcase products and facilitate instant purchasing."
+    ]
+  },
+  "points": {
+  "ar": [
+    "متجر إلكتروني سريع بتقنية Static.",
+    "ربط الطلبات مع WhatsApp تلقائيًا.",
+    "تصميم UI يبرز المنتجات بوضوح.",
+    "تواصل مباشر بين العميل والتاجر.",
+    "تصميم متجاوب لتجربة موبايل مريحة.",
+    "تحسين الأداء وسرعة تحميل المنتجات."
+  ],
+  "en": [
+    "High-speed static e-commerce store.",
+    "WhatsApp integration for orders.",
+    "UI design highlighting products.",
+    "Direct customer-merchant communication.",
+    "Responsive mobile-friendly design.",
+    "Optimized performance and loading speed."
+  ]
+},
+  "url": "https://morsh-d.com/"
+},
+    {
+      "id": 9,
+      "img": "/assets/images/logo/FlowerTerrace.png",
+      "name": { "ar": "FlowerTerrace", "en": "FlowerTerrace" },
+  "description": {
+    "ar": [
+      "منصة رقمية فاخرة تجمع بين خدمات المطعم والكافيه."
+    ],
+    "en": [
+      "A premium digital platform combining restaurant and cafe services."
+    ]
+  },
+ "points": {
+  "ar": [
+    "موقع عصري يعكس هوية المطعم والكافيه.",
+    "لوحة تحكم لإدارة المنيو والطلبات.",
+    "عرض ديناميكي للأطعمة والمشروبات.",
+    "تجربة مستخدم سريعة وسلسة.",
+    "تصميم متجاوب لكل الأجهزة.",
+    "تحسين SEO لسهولة الوصول."
+  ],
+  "en": [
+    "Modern website reflecting brand identity.",
+    "Dashboard for menus and orders.",
+    "Dynamic display for food and drinks.",
+    "Fast and smooth user experience.",
+    "Responsive design for all devices.",
+    "SEO optimization for better reach."
+  ]
+},
+  "url": "https://flowerterrace.ensmenu.com/"
+}
   ]
 }
+
+
