@@ -39,8 +39,9 @@ const page = () => {
         ratingcon={t("hero.rating")}
         img="/assets/images/intro/introThumb1_1.png"
       ></HeroBanner1>
+            <BrandSwaper></BrandSwaper>
+
       <Brand1></Brand1>
-      <BrandSwaper></BrandSwaper>
       <About1
         img1="/assets/images/about/1.png"
         img2="/assets/images/about/aboutThumb1_2.png"
