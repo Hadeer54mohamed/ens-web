@@ -861,7 +861,7 @@ input[type="radio"]:checked ~ label::before {
     max-width: 1450px;
   }
   .brand-slider-container-wrapper.style2 .container {
-    max-width: 1450px;
+    max-width: 1820px;
   }
   .work-process-container-wrapper.style1 .container {
     max-width: 1440px;
@@ -7541,8 +7541,8 @@ input.main-search-input::placeholder {
   }
 
   .brandSliderTwo .brand-image-wrapper {
-    width: 190px;
-    height: 80px;
+    width: 280px;
+    height: 150px;
   }
 
   .brandSliderOne .swiper-slide,

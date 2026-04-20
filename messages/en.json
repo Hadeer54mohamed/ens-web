@@ -882,5 +882,8 @@
     "loading": "Loading brands...",
     "noBrands": "No brands available at the moment.",
     "error": "Error"
+  },
+  "BrandSwaper": {
+    "title": "Our Clients"
   }
 }

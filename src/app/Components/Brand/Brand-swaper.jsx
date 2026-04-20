@@ -7,25 +7,19 @@ import { getAllBrands } from "../../../lib/api/services";
 import brandsData from "../../Data/brand1.json";
 
 const BrandSwaper = () => {
-  const t = useTranslations("Brand1");
+  const t = useTranslations("BrandSwaper");
   const locale = useLocale();
-  const [brands, setBrands] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [brands, setBrands] = useState(brandsData);
 
   useEffect(() => {
     const fetchBrands = async () => {
       try {
-        setLoading(true);
         const data = await getAllBrands();
         if (data && data.length > 0) {
           setBrands(data);
-        } else {
-          setBrands(brandsData);
         }
       } catch {
-        setBrands(brandsData);
-      } finally {
-        setLoading(false);
+        // keep local data
       }
     };
 
@@ -75,31 +69,6 @@ const BrandSwaper = () => {
     ],
   };
 
-  if (loading) {
-    return (
-      <div
-        className="brand-slider-section section-padding fix "
-        dir={locale === "ar" ? "rtl" : "ltr"}
-      >
-        <div className="brand-slider-container-wrapper style2">
-          <div className="container">
-            <div className="brand-slider-wrapper style2">
-              <div className="row">
-                <div className="slider-area brandSliderTwo">
-                  <div className="brand-loading-grid">
-                    {[...Array(5)].map((_, i) => (
-                      <div key={i} className="brand-loading-item" />
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   if (!brands || brands.length === 0) return null;
 
   return (
@@ -108,6 +77,7 @@ const BrandSwaper = () => {
       dir={locale === "ar" ? "rtl" : "ltr"}
     >
       <div className="brand-slider-container-wrapper style2">
+        <h2 className="single-section-title wow fadeInUp text-center" data-wow-delay=".2s">{t("title")}</h2>
         <div className="container">
           <div className="brand-slider-wrapper style2">
             <div className="row">
