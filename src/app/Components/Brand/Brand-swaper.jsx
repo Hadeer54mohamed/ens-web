@@ -77,7 +77,14 @@ const BrandSwaper = () => {
       dir={locale === "ar" ? "rtl" : "ltr"}
     >
       <div className="brand-slider-container-wrapper style2">
-        <h2 className="single-section-title wow fadeInUp text-center" data-wow-delay=".2s">{t("title")}</h2>
+        <div className="section-title text-center mxw-685 mx-auto">
+          <div className="subtitle wow fadeInUp" data-wow-delay=".2s">
+            <i className="bi bi-people-fill"></i>
+            {t.rich("title", {
+              span: (chunks) => <span>{chunks}</span>,
+            })}
+          </div>
+        </div>
         <div className="container">
           <div className="brand-slider-wrapper style2">
             <div className="row">

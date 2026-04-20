@@ -74,20 +74,20 @@ const Brand1 = () => {
   if (brands.length === 0) {
     return (
       <div
-        className="brand-slider-section brand1-cards-section section-padding"
+        className="brand1-cards-section"
         dir={locale === "ar" ? "rtl" : "ltr"}
       >
         <div className="brand-slider-container-wrapper style1">
           <div className="container">
             <div className="brand-slider-wrapper style1">
               <div className="text-center mxw-685 mx-auto brand1-header-block">
-                <h2
-                  className="single-section-title wow fadeInUp"
-                  data-wow-delay=".2s"
-                >
-                  {pickLocalized(sectionTitle, lang)}
-                </h2>
-                <div className="brand1-lead">
+                <div className="section-title text-center">
+                  <div className="subtitle wow fadeInUp" data-wow-delay=".2s">
+                    <i className="bi bi-building-fill"></i>
+                    {pickLocalized(sectionTitle, lang)}
+                  </div>
+                </div>
+                <div className="brand1-lead wow fadeInUp" data-wow-delay=".3s">
                   {pickLocalized(sectionLead, lang)}
                 </div>
               </div>
@@ -105,23 +105,23 @@ const Brand1 = () => {
 
   return (
     <div
-      className="brand-slider-section brand1-cards-section section-padding"
+      className="brand1-cards-section"
       dir={locale === "ar" ? "rtl" : "ltr"}
     >
       <div className="brand-slider-container-wrapper style1">
         <div className="container">
           <div className="brand-slider-wrapper style1">
-            <div className="text-center mxw-685 mx-auto brand1-header-block">
-              <h2
-                className="single-section-title wow fadeInUp"
-                data-wow-delay=".2s"
-              >
-                {pickLocalized(sectionTitle, lang)}
-              </h2>
-              <div className="brand1-lead">
-                {pickLocalized(sectionLead, lang)}
+              <div className="text-center mxw-685 mx-auto brand1-header-block">
+                <div className="section-title text-center">
+                  <div className="subtitle wow fadeInUp" data-wow-delay=".2s">
+                    <i className="bi bi-building-fill"></i>
+                    {pickLocalized(sectionTitle, lang)}
+                  </div>
+                </div>
+                <div className="brand1-lead wow fadeInUp" data-wow-delay=".3s">
+                  {pickLocalized(sectionLead, lang)}
+                </div>
               </div>
-            </div>
             <div className="row">
               <div className="brandSliderOne brand-clients-wrap">
                 <div className="brand-clients-grid">
