@@ -41,7 +41,6 @@ const page = () => {
       ></HeroBanner1>
             <BrandSwaper></BrandSwaper>
 
-      <Brand1></Brand1>
       <About1
         img1="/assets/images/about/1.png"
         img2="/assets/images/about/aboutThumb1_2.png"
@@ -68,7 +67,9 @@ const page = () => {
         btnurl={`/${locale}/about`}
       ></Choose1>
       <Counter1></Counter1>
+    
       <Feature1></Feature1>
+      <Brand1></Brand1>
       <Testimonial></Testimonial>
       <Faq1></Faq1>
 
